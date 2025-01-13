@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>TFTGuider</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+      	<link rel="stylesheet" type="text/css" href="main.css">
+
+	</head>
+    
+	<body>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="main.js"></script>
+	</body>
+	<nav class="navbar navbar-expand-md">
+		<a class="navbar-brand" href="index.html">
+			<img src="images/nav-tft-image.png" class="img-fluid">
+		</a>
+		<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation" onclick="myFunction()">
+			<span class="navbar-toggler-icon"></span>
+			<div class="topnav">
+				<div id="myLinks">	
+				    <a href="traits.html">Traits</a>
+				    <a href="roster.html">Roster</a>
+				    <a href="items.html">Items</a>
+				    <a href="builder.html">Builder</a>
+				 </div>
+				 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				    <i class="fa fa-bars"></i>
+				 </a>
+			</div>
+		</button>
+		<div class="collapse navbar-collapse" id="main-navigation">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="traits.html">Traits</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="roster.html">Roster</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="items.html">Items</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="builder.html">Builder</a>
+				</li>
+			</ul>
+		</div>
+		
+	</nav>
+	<p>ㅤㅤ</p>
+	<h1 class="title" style="font-size:60px; padding-top: 20px;">BUILDER</h1>
+	<div class="container dropzone">
+		<div class="row3">
+			<div class="div1" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div2" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div3" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div4" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div5" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div6" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div7" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+	    </div>
+	    <div class="row4">
+			<div class="div1" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div2" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div3" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div4" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div5" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div6" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div7" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+	    </div>
+		<div class="row3">
+			<div class="div1" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div2" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div3" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div4" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div5" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div6" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div7" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+	    </div>
+	    <div class="row4">
+			<div class="div1" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div2" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div3" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div4" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div5" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div6" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+		    <div class="div7" ondrop="drop(event)" 
+		        ondragover="allowDrop(event)">
+		    </div>
+	    </div>
+	</div>
+	<div class="container button">
+			<a class="btn btn-primary" href="builder.html" role="button">Reset</a>
+		</div>
+	<p>ㅤㅤ</p>
+	
+		<section class="characters-list-wrapper">
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag1" src="https://rerollcdn.com/characters/Skin/6.5/Ahri.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag2" src="https://rerollcdn.com/characters/Skin/6.5/Alistar.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">	
+				<img class="character-icon" id="drag3" src="https://rerollcdn.com/characters/Skin/6.5/Ashe.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag4" src="https://rerollcdn.com/characters/Skin/6.5/Blitzcrank.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag5" src="https://rerollcdn.com/characters/Skin/6.5/Brand.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag6" src="https://rerollcdn.com/characters/Skin/6.5/Braum.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag7" src="https://rerollcdn.com/characters/Skin/6.5/Caitlyn.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag8" src="https://rerollcdn.com/characters/Skin/6.5/Camille.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag9" src="https://rerollcdn.com/characters/Skin/6.5/Chogath.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+					<img class="character-icon" id="drag10" src="https://rerollcdn.com/characters/Skin/6.5/Corki.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag11" src="https://rerollcdn.com/characters/Skin/6.5/Darius.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag12" src="https://rerollcdn.com/characters/Skin/6.5/Draven.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag13" src="https://rerollcdn.com/characters/Skin/6.5/Ekko.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag14" src="https://rerollcdn.com/characters/Skin/6.5/Ezreal.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag15" src="https://rerollcdn.com/characters/Skin/6.5/Galio.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag16" src="https://rerollcdn.com/characters/Skin/6.5/Gangplank.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag17" src="https://rerollcdn.com/characters/Skin/6.5/Gnar.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag18" src="https://rerollcdn.com/characters/Skin/6.5/Illaoi.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag19" src="https://rerollcdn.com/characters/Skin/6.5/Irelia.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag20" src="https://rerollcdn.com/characters/Skin/6.5/JarvanIV.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag21" src="https://rerollcdn.com/characters/Skin/6.5/Jayce.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag22" src="https://rerollcdn.com/characters/Skin/6.5/Jhin.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag23" src="https://rerollcdn.com/characters/Skin/6.5/Jinx.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag24" src="https://rerollcdn.com/characters/Skin/6.5/Kaisa.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag25" src="https://rerollcdn.com/characters/Skin/6.5/Kassadin.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag26" src="https://rerollcdn.com/characters/Skin/6.5/Khazix.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag27" src="https://rerollcdn.com/characters/Skin/6.5/Leona.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag28" src="https://rerollcdn.com/characters/Skin/6.5/Lucian.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag29" src="https://rerollcdn.com/characters/Skin/6.5/Lulu.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag30" src="https://rerollcdn.com/characters/Skin/6.5/Malzahar.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag31" src="https://rerollcdn.com/characters/Skin/6.5/MissFortune.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag32" src="https://rerollcdn.com/characters/Skin/6.5/Morgana.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag33" src="https://rerollcdn.com/characters/Skin/6.5/Nocturne.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag34" src="https://rerollcdn.com/characters/Skin/6.5/Orianna.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag35" src="https://rerollcdn.com/characters/Skin/6.5/Poppy.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag36" src="https://rerollcdn.com/characters/Skin/6.5/Quinn.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag37" src="https://rerollcdn.com/characters/Skin/6.5/RekSai.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag38" src="https://rerollcdn.com/characters/Skin/6.5/RenataGlasc.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag39" src="https://rerollcdn.com/characters/Skin/6.5/Sejuani.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag40" src="https://rerollcdn.com/characters/Skin/6.5/Senna.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag41" src="https://rerollcdn.com/characters/Skin/6.5/Seraphine.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">	
+				<img class="character-icon" id="drag42" src="https://rerollcdn.com/characters/Skin/6.5/Silco.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">	
+				<img class="character-icon" id="drag43" src="https://rerollcdn.com/characters/Skin/6.5/Singed.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">	
+				<img class="character-icon" id="drag44" src="https://rerollcdn.com/characters/Skin/6.5/Sivir.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">	
+				<img class="character-icon" id="drag45" src="https://rerollcdn.com/characters/Skin/6.5/Swain.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">	
+				<img class="character-icon" id="drag46" src="https://rerollcdn.com/characters/Skin/6.5/Syndra.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">	
+				<img class="character-icon" id="drag47" src="https://rerollcdn.com/characters/Skin/6.5/TahmKench.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">	
+				<img class="character-icon" id="drag48" src="https://rerollcdn.com/characters/Skin/6.5/Talon.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">	
+				<img class="character-icon" id="drag49" src="https://rerollcdn.com/characters/Skin/6.5/Tryndamere.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">	
+				<img class="character-icon" id="drag50" src="https://rerollcdn.com/characters/Skin/6.5/Twitch.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">	
+				<img class="character-icon" id="drag51" src="https://rerollcdn.com/characters/Skin/6.5/Veigar.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">	
+				<img class="character-icon" id="drag52" src="https://rerollcdn.com/characters/Skin/6.5/Vex.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">	
+				<img class="character-icon" id="drag53" src="https://rerollcdn.com/characters/Skin/6.5/Vi.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">	
+				<img class="character-icon" id="drag54" src="https://rerollcdn.com/characters/Skin/6.5/Viktor.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">	
+				<img class="character-icon" id="drag55" src="https://rerollcdn.com/characters/Skin/6.5/Warwick.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">	
+				<img class="character-icon" id="drag56" src="https://rerollcdn.com/characters/Skin/6.5/Zac.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">	
+				<img class="character-icon" id="drag57" src="https://rerollcdn.com/characters/Skin/6.5/Zeri.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">	
+				<img class="character-icon" id="drag58" src="https://rerollcdn.com/characters/Skin/6.5/Ziggs.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">	
+				<img class="character-icon" id="drag59" src="https://rerollcdn.com/characters/Skin/6.5/Zilean.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+			<div class="character-wrapper">
+				<img class="character-icon" id="drag60" src="https://rerollcdn.com/characters/Skin/6.5/Zyra.png" draggable="true" ondragstart="drag(event)" width="80" height="80">
+			</div>
+		</section>
+	</div>
+	<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+                <p>TFT Planner is hosted by Diogo Raimundo. TFT Planner isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <h6 class="text-uppercase font-weight-bold">Contact</h6>
+            <p>Universidade Lusiada de Lisboa
+            <br/>11047120@lis.ulusiada.pt
+            </p>
+        </div>
+    <div>
+    <div class="footer-copyright text-center">© 2020 Copyright: MyWebsite.com</div>	
+</footer>
+</html>
