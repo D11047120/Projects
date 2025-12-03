@@ -1,0 +1,33 @@
+.manager-projects-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.manager-projects-container input {
+  margin: 8px;
+  padding: 6px 10px;
+}
+
+.manager-projects-container button {
+  margin: 8px;
+  padding: 6px 14px;
+}
+
+.projects-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.projects-table th,
+.projects-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+.manager-projects-container textarea {
+  width: 100%;
+  resize: vertical;
+}

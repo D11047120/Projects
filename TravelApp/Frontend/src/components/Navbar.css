@@ -1,0 +1,44 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar-brand {
+  color: #ffffff;          
+  font-size: 1.5rem;        
+  font-weight: bold;
+  text-decoration: none;    
+  cursor: pointer;          
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #ffcc00;            
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}

@@ -1,0 +1,379 @@
+/* src/components/RequestForm.css */
+
+.request-form-container {
+  position: relative;
+  padding: 30px;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+.request-form-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.request-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+  font-size: 0.95em;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 1em;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, cursor 0.2s ease; /* Added background-color and cursor to transition */
+}
+
+.form-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+/* Apply read-only styles only when the input is actually read-only or disabled */
+.form-input[readOnly],
+.form-input:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+
+.form-group-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
+
+.form-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #007bff;
+}
+
+.form-group-checkbox label {
+  margin-bottom: 0;
+  font-weight: normal;
+  color: #333;
+  cursor: pointer;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.form-button {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.05em;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+  min-width: 150px;
+}
+
+.save-draft-button {
+  background-color: #6c757d;
+  color: white;
+}
+
+.save-draft-button:hover {
+  background-color: #5a6268;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submit-request-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.submit-request-button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.form-message {
+  margin-top: 25px;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1em;
+}
+
+.success-message {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+.error-message {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+.request-status-display {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+}
+
+.status-drafted {
+  background-color: #ffeccf;
+  border: 1px solid #ffc107;
+  color: #856404;
+}
+
+.status-submitted {
+  background-color: #d4edda;
+  border: 1px solid #28a745;
+  color: #155724;
+}
+
+.status-waitingforquotes {
+  background-color: #e0f7fa;
+  border: 1px solid #00bcd4;
+  color: #006064;
+}
+
+.status-waitingfortravelerselection {
+  background-color: #e3f2fd;
+  border: 1px solid #2196f3;
+  color: #0d47a1;
+}
+
+.status-waitingformanagerapproval {
+  background-color: #fce4ec;
+  border: 1px solid #e91e63;
+  color: #ad1457;
+}
+
+.status-approved {
+  background-color: #e8f5e9;
+  border: 1px solid #4caf50;
+  color: #2e7d32;
+}
+
+.status-rejected {
+  background-color: #ffebee;
+  border: 1px solid #f44336;
+  color: #c62828;
+}
+
+.status-cancelled {
+  background-color: #eceff1;
+  border: 1px solid #607d8b;
+  color: #37474f;
+}
+
+.project-info-box {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  background: #f9f9f9;
+  font-size: 0.9em;
+}
+.generated-request-code {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #000000;
+}
+
+/* Container */
+.react-date-picker {
+  display: inline-flex;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 5px 10px;
+  background: white;
+  font-family: 'Segoe UI', sans-serif;
+  transition: border 0.2s;
+}
+
+.react-date-picker:focus-within {
+  border-color: #1e90ff;
+  box-shadow: 0 0 0 2px rgba(30, 144, 255, 0.2);
+}
+
+/* Remove default border of native input */
+.react-date-picker__inputGroup {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.react-date-picker__inputGroup__input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 2.5em;
+  padding: 4px;
+  background: transparent;
+}
+
+/* Calendar button styling */
+.react-date-picker__calendar-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 5px;
+  color: #1e90ff;
+}
+
+.react-date-picker__calendar-button:hover {
+  color: #0077cc;
+}
+
+/* Clear button (optional) */
+.react-date-picker__clear-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 5px;
+  color: #999;
+}
+
+.react-date-picker__clear-button:hover {
+  color: #444;
+}
+
+/* Calendar Popup */
+.react-calendar {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 8px;
+}
+
+/* Today highlight */
+.react-calendar__tile--now {
+  background: rgba(30, 144, 255, 0.1);
+  border-radius: 6px;
+}
+
+/* Selected date */
+.react-calendar__tile--active {
+  background: #1e90ff;
+  color: white;
+  border-radius: 6px;
+}
+
+/* Hover effect */
+.react-calendar__tile:hover {
+  background: rgba(30, 144, 255, 0.2);
+  border-radius: 6px;
+}
+.react-date-picker__inputGroup__input:empty {
+  color: #aaa;
+}
+/* Remove red border from inputs on error/invalid */
+.react-date-picker__inputGroup__input:invalid {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+/* Prevent default red focus styling */
+.react-date-picker__inputGroup__input:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+}
+
+/* If browser shows red border on invalid form */
+.react-date-picker input:invalid {
+  box-shadow: none;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .request-form-container {
+    padding: 20px;
+    margin: 20px auto;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .form-group {
+    min-width: unset;
+  }
+  .button-group {
+    flex-direction: column;
+  }
+  .request-status-display {
+    position: static; /* Remove absolute positioning on small screens */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}

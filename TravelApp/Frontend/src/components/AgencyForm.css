@@ -1,0 +1,145 @@
+.agency-form-container {
+  padding: 30px;
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  text-align: left;
+}
+
+.agency-form-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.agency-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+  font-size: 0.95em;
+  text-align: left;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 1em;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, cursor 0.2s ease;
+}
+
+/* This is the key change: a more specific rule for editable inputs */
+.form-input:not([readOnly]):not(:disabled) {
+  cursor: text;
+}
+
+.form-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+/* Apply read-only/disabled styles only when the input is actually read-only or disabled */
+.form-input[readOnly],
+.form-input:disabled {
+  background-color: #e9ecef; /* Read-only background color */
+  cursor: not-allowed; /* Prohibited symbol cursor */
+}
+
+.form-button {
+  margin: 10px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.05em;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+  background-color: #007bff;
+  color: white;
+  min-width: 120px;
+}
+
+.form-button.back-button {
+    background-color: #6c757d;
+}
+
+.form-button.back-button:hover {
+    background-color: #5a6268;
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.form-message {
+  margin-top: 25px;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1em;
+}
+
+.success-message {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+.error-message {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+.agencies-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.agencies-table th,
+.agencies-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.agencies-table th {
+  background-color: #f4f4f4;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .agency-form-container {
+    padding: 20px;
+    margin: 20px auto;
+  }
+}

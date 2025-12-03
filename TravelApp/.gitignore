@@ -1,0 +1,6 @@
+obj/
+bin/
+appsettings.*
+node_modules/
+.vscode
+.DS_Store
